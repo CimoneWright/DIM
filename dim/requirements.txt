@@ -1,0 +1,9 @@
+Glances
+jsonschema
+nbformat
+np
+numpy
+pandas
+psutil
+pymongo
+python-dateutil
