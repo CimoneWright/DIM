@@ -39,14 +39,6 @@ sudo docker run -d -p 27017:27017 --name mongodb mongo
 
 sudo python3 main.py -i 192.168.122.14 -l 80 -m 6 -M 6 -a 8008 -n 8009 -r ./test_iptables.rules -t False
 
-## For Developers and Testers
-### Running the Unittests
-1. Select the test class you wish to run (We recommend doing just the generic ones for now.)
-2. Run ``python3 -m unittest <module_name>.<TestCaseClassName>`` 
-(ex. ``python3 -m unittest test_setup.SetupTestCaseGeneric`` will run all tests of
-setup that are not operating system related)
-3. Done! You should have feedback as to whether your tests succeeded or not.
-
 
 ##Helpful commands to filter ports
 1. Inspect listing port
