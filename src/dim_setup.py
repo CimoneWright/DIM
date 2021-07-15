@@ -31,14 +31,14 @@ if __name__=='__main__':
         if "CentOS" in distro:
             print("Detected CentOS")
             dim_setup = DIMSetupManager("CentOS", "yum", "httpd",
-                                   "/etc/httpd/conf/httpd.conf", "nginx_webserver",
-                                   "/etc/nginx_webserver/nginx_webserver.conf",
+                                   "/etc/httpd/conf/httpd.conf", "nginx",
+                                   "/etc/nginx/nginx.conf",
                                    "/etc/sysconfig/iptables")
-        elif "debian" in distro:
+        elif "Debian" in distro:
             print("Detected Debian")
             dim_setup = DIMSetupManager("debian", "apt-get", "apache2",
-                                   "/etc/apache2/ports.conf", "nginx_webserver",
-                                   "/etc/nginx_webserver/sites-enabled/default",
+                                   "/etc/apache2/ports.conf", "nginx",
+                                   "/etc/nginx/sites-enabled/default",
                                    "/etc/iptables.rules")
         elif "Ubuntu" in distro:
             print("Detected Ubuntu")
